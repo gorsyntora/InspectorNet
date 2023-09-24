@@ -13,7 +13,7 @@ string[] lines = result.Split(
     StringSplitOptions.None
 );
 
-string example = "New just string";
+string example = lines[2];
 
 var str = example.Split(null);
 
