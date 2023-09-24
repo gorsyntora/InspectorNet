@@ -8,8 +8,13 @@ string param = "netstat -alpnt";
 
 string result = RunCommandWithBash(param);
 var splittedString = result.Split(new string[] { "\\n" }, StringSplitOptions.None);
+string[] lines = result.Split(
+    new[] { "\r\n", "\r", "\n" },
+    StringSplitOptions.None
+);
 
-Console.WriteLine(splittedString[0]);
+Console.WriteLine(lines.Length + " "+ lines[0]);
+
 
 string RunCommandWithBash(string command)
 {
