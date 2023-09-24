@@ -15,7 +15,7 @@ string[] lines = result.Split(
 
 string example = lines[2];
 
-var str = example.Split(null);
+var str = example.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
 
 Console.WriteLine(lines.Length + " "+ lines[0]);
