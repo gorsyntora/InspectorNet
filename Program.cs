@@ -22,7 +22,7 @@ Console.WriteLine(lines.Length + " "+ lines[0]);
 Console.WriteLine(lines.Length + " " + lines[1]);
 Console.WriteLine(lines.Length + " " + lines[2]);
 
-Console.WriteLine("Line info" + " " + str[0]+ str[1]+ str[2]);
+Console.WriteLine("Line info:" + str.Length+" " + str[0]+ str[1]+ str[2]);
 
 string RunCommandWithBash(string command)
 {
