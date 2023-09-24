@@ -7,7 +7,9 @@ Console.WriteLine("Hello, World!");
 string param = "netstat -alpnt";
 
 string result = RunCommandWithBash(param);
-Console.WriteLine(result);
+var splittedString = result.Split(new string[] { "\\n" }, StringSplitOptions.None);
+
+Console.WriteLine(splittedString[0]);
 
 string RunCommandWithBash(string command)
 {
