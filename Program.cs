@@ -14,6 +14,8 @@ string[] lines = result.Split(
 );
 
 Console.WriteLine(lines.Length + " "+ lines[0]);
+Console.WriteLine(lines.Length + " " + lines[1]);
+Console.WriteLine(lines.Length + " " + lines[2]);
 
 
 string RunCommandWithBash(string command)
