@@ -16,7 +16,7 @@ string[] lines = result.Split(
 string example = lines[2];
 
 var str = example.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-
+var abc = 99;
 
 Console.WriteLine(lines.Length + " "+ lines[0]);
 Console.WriteLine(lines.Length + " " + lines[1]);
